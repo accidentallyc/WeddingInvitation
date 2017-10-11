@@ -1,0 +1,112 @@
+/** patterns **/
+*{ 
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+
+  /* No support for these yet, use at own risk */
+  -o-user-select: none;
+  user-select: none;          
+}
+
+#info { opacity:0.5; font-size:0.5em; position:absolute; bottom:1em; left:1em;}
+#warning{ opacity: 1;
+font-size: 0.8em;
+position: absolute;
+top: 12em;
+width:14em;
+text-align: center;
+display: block; }
+.center{ left:0; right:0; top:0; bottom:0; margin:auto; }
+.shadow{
+	box-shadow:3px 3px 10px 2px gray;
+	-moz-box-shadow:3px 3px 10px 2px gray;
+	-webkit-box-shadow:3px 3px 10px 2px gray;
+}
+
+.shadow-rev{
+	box-shadow:3px -7px 10px 2px gray;
+	-moz-box-shadow:3px -7px 10px 2px gray;
+	-webkit-box-shadow:3px -7px 10px 2px gray;
+}
+
+
+.shadow-thin{
+	box-shadow:1px 1px 1px 2px rgba(0,0,0,0.2);
+	-moz-box-shadow:1px 1px 1px 2px rgba(0,0,0,0.2);
+	-webkit-box-shadow:1px 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.shadow-thin-rev{
+	box-shadow:1px -3px 1px 2px rgba(0,0,0,0.2);
+	-moz-box-shadow:1px -3px 1px 2px rgba(0,0,0,0.2);
+	-webkit-box-shadow:1px -3px 1px 2px rgba(0,0,0,0.2);
+}
+
+/** specifics **/
+.bg-ht{ background:url(halftone.png);}
+.bg-htl{background: url(halftone-light.png);}
+body{
+	background:url( school.png );
+	font-size:150%;
+	height:70em;
+	-webkit-perspective: 500px; /* Chrome, Safari, Opera */
+    perspective: 500px;
+	transition:margin 1s;
+	margin:0;
+}
+
+#invitation{color: #dd2121;
+position: absolute;
+width: 10em;
+height: auto;
+text-align: center;
+top: 2em;
+font-size: 3em;
+font-family: Calibri, Comic-San,Arial;}
+
+#envelope{
+	cursor: pointer;
+	position:absolute;
+	width: 40em;
+	height:19.5em;
+	transition: all 1s;
+	top:-12em;
+}
+
+#envelope-top{
+	width:100%;
+	height:45%;
+	transform-origin: top center;
+	-webkit-transform-origin: top center;
+	transition: all 1s;
+	position:absolute;
+	z-index:3;
+}
+#envelope-bottom{
+	width:100%;
+	height:80%;
+	transform-origin: bottom center;
+	-webkit-transform-origin: bottom center;
+	transition: all 1s;
+	position:absolute;
+	bottom:0;
+	z-index:2;
+}
+
+#wax-seal{
+	position:absolute;
+	cursor:pointer;
+	bottom:-8em;
+	width:15%;
+}
+#part1{ width:auto; max-height:100%;  position:absolute; height:90%;}
+#part2{ width:auto; max-height:100%;  position:absolute; height:90%; }
+#part2-paper{  display:none;}
+.paper{
+width: 95%;
+height: 95%;
+background-color: #FFF;
+position:absolute;
+z-index:1;
+}

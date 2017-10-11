@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<link href='css/style.css' rel='stylesheet' type='text/css'/>
+		<title>You are invited!</title>
+	</head>
+	<style>
+		#preloader{ width:100%; height:100%; background:rgba(0,0,0,0.97); position:fixed; top:0;bottom:0;z-index:20; color:white; }
+		#preloadergif{    
+			position: fixed;
+    	bottom: calc( 50% - 150px);
+    	top: 0;
+    	margin: auto;
+		}
+	</style>
+<body>
+	<audio controls id="audio" style="display:none">
+		  <source src="musicbox.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio>
+	<div id="preloader">
+		<img src='css/phonograph2.gif' class='loader center' id="preloadergif"/><Br/>
+		
+	</div>
+	<h1 class="center" id="invitation">You are invited!</h1>
+	<span id="warning" class="center">Scroll using the mousewheel or the arrow keys!<br/> ( Best viewed on a desktop )</span>
+
+	<div id="envelope" class='center shadow bg-htl' onclick="!hasOpened && T.play();">
+		<div id="envelope-bottom" class='bg-ht' >
+			<div  class="center paper" id="part2-paper" ><img id="part2" class="center" src='css/p2.png'/></div>
+		</div>
+		<div id="envelope-top" class='shadow-thin bg-htl'>
+			<img id='wax-seal' src='css/wax-seal.png' class='center'/>
+		</div>
+		
+		<div  class="center paper"><img id="part1" class="center" src='css/p1.gif'/></div>
+		
+	</div>
+	
+	<div id="info">
+		Made by Cassey Chavez w/ help from Farrah Marie Caberte. <a href="https://accidentallyc.github.com/resume"/>accidentallyc.github.com/resume</a>
+	</div>
+	<script src="js/jquery.js"></script>
+	<script src="js/timeline.js"></script>
+	<script src="js/timeline-actions.js"></script>
+</body>
+</html>

@@ -72,7 +72,12 @@ function Timeline(opts){
 			if( _curr_frame > end_frame )	_stop();
 		}
 		
+		// hack
 		
+		$("#audio").trigger('play').on('ended', function () {
+			this.currentTime = 0;
+    			this.play();
+		});
 	}
 	
 	function _stop(){

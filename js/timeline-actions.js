@@ -30,9 +30,5 @@ $( document).ready( function(){
 }); //document.ready
 
 $(window).load( function(){
-	$("#audio").trigger('play').on('ended', function () {
-			this.currentTime = 0;
-    	this.play();
-		});
 	$("#preloader").delay(2000).fadeOut(3000);
 });
